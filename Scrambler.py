@@ -3,14 +3,14 @@ import random
 
 x = 1
 wordList = ["somebody", "cucumber", "maelstrom", "potato", "hippopotamus", "world", "yellow", "gonna", "A$AP Rocky", "Saylar", "aint", "ribbon", "sharpest", "tools", "inside", "sweater", "shed", "roll"]
-#picks a random word from the list
+#picks a random word from the list.
 def randWord(wordList):
     chosen = random.choice(wordList)
     word = list(chosen)
     random.shuffle(word)
     x = ''.join(word)
     return x
-#allows the user to guess the word
+#allows the user to guess the word.
 def guess():
     guess = input("What is your guess?")
     if guess == randWord(wordList):
